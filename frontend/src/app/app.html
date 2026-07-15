@@ -1,0 +1,37 @@
+<div class="container">
+
+  <h1>AI Task Manager</h1>
+
+  <input
+    [(ngModel)]="taskTitle"
+    placeholder="Enter task">
+
+  <button (click)="addTask()">
+    Add Task
+  </button>
+
+  <hr>
+
+  <div class="task-card" *ngFor="let task of tasks">
+
+    <div>
+      <input
+      [(ngModel)]="task.title">
+      <p>Status: {{task.status}}</p>
+    </div>
+
+    <div>
+
+      <button (click)="updateTask(task)">
+           Save
+      </button>
+
+      <button (click)="deleteTask(task._id)">
+        Delete
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
