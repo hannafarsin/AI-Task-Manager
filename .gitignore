@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Angular build files
+frontend/.angular/
+frontend/dist/
+
+# Environment variables
+.env
+
+# Logs
+npm-debug.log*
+
+# VS Code settings
+.vscode/
+
+# Operating system files
+Thumbs.db
+.DS_Store
